@@ -1,0 +1,105 @@
+.nav {
+  display: flex;
+  justify-content: flex-end;
+  background: #008aff;
+}
+
+.nav a {
+  color: #fff;
+  padding: 15px 10px;
+  text-decoration: none;
+  text-align: center;
+}
+
+.nav a:hover {
+  background: #5c8db7;
+}
+
+.menu-btn {
+  padding: 15px 10px;
+  height: 20px;
+  background-color: #008aff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  display: none;
+}
+
+.menu-btn__button {
+  display: block;
+  width: 30px;
+  height: 30px;
+  background-color: #fff;
+  position: relative;
+}
+
+.menu-btn__button span,
+.menu-btn__button::before,
+.menu-btn__button::after {
+  width: 20px;
+  height: 2px;
+  position: absolute;
+  left: 50%; margin-left: -10px;
+  top: 50%; margin-top: -1px;
+  background-color: #008aff;
+}
+
+.menu-btn__button::before,
+.menu-btn__button::after {
+  content: '';
+}
+
+.menu-btn__button::before {
+  transform: translateY(-7px);
+}
+
+.menu-btn__button::after {
+  transform: translateY(7px);
+}
+
+@media all and (max-width: 800px) {
+  .nav { justify-content: space-around; }
+  .nav a{ flex-grow:1;}
+  a {display: none;}
+  .menu-btn {display: block;}
+}
+
+@media all and (max-width: 500px) {
+  .nav { flex-direction: column; }
+}
+
+@media (min-width:320px) {
+  .nav {
+    font-size: 15px;
+  }
+}
+
+@media (min-width:481px) {
+  .nav {
+    font-size: 20px;
+  }
+}
+
+@media (min-width:641px) {
+  .nav {
+    font-size: 25px;
+  }
+}
+
+@media (min-width:961px) {
+  .nav {
+    font-size: 30px;
+  }
+}
+
+@media (min-width:1025px) {
+  .nav {
+    font-size: 35px;
+  }
+}
+
+@media (min-width:1281px) {
+  .nav {
+    font-size: 40px;
+  }
+}
